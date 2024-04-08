@@ -1,11 +1,3 @@
-/*
-
-Eatery Cafe Template
-
-http://www.templatemo.com/tm-515-eatery
-
-*/
-
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
   body {
@@ -17,7 +9,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-     TYPOGRAPHY
+     TIPOGRAFIA
   -----------------------------------------*/
 
   h1,h2,h3,h4,h5,h6 {
@@ -57,7 +49,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-     GENERAL
+     GERAL
   -----------------------------------------*/
 
   html{
@@ -138,7 +130,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-     BUTTONS
+     BOTẼS
   -----------------------------------------*/
 
   .section-btn {
@@ -155,7 +147,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-       PRE LOADER
+       PRÉ LOADER
   -----------------------------------------*/
 
   .preloader {
@@ -559,6 +551,7 @@ http://www.templatemo.com/tm-515-eatery
 
   .menu-thumb img {
     width: 100%;
+    padding: 11px;
     transition: 0.5s;
   }
 
@@ -638,7 +631,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-      TESTIMONIAL
+      TESTEMUNHO
   -----------------------------------------*/
 
   #testimonial {
@@ -694,7 +687,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-      CONTACT
+      CONTACTO
   -----------------------------------------*/
 
   #contact .section-title {
@@ -821,7 +814,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-     SOCIAL ICON
+     ICONES
   -----------------------------------------*/
 
   .social-icon {
@@ -857,7 +850,7 @@ http://www.templatemo.com/tm-515-eatery
 
 
   /*---------------------------------------
-     RESPONSIVE STYLES
+     RESPONSIVIDADE
   -----------------------------------------*/
 
   @media screen and (max-width: 1170px) {

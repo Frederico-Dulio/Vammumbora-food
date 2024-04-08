@@ -22,7 +22,7 @@ class ClienteController extends Controller
 
     public function login_client(Request $request)
     {
-
+        
         $check = $request->all();
 
         if (Auth::guard('cliente')->attempt(['email' => $check['email'], 'password' => $check['password']])) {
@@ -61,7 +61,7 @@ class ClienteController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
-        return redirect()->route('login')->with('cadastrar', "Usuário cadastrado com sucesso!");
+        return redirect()->route('login')->with('cadastrar', "Cliente cadastrado com sucesso!");
     }
 
     /**

@@ -56,7 +56,6 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
         Admin::create([
             'name' => $request->name,
             'email' => $request->email,
