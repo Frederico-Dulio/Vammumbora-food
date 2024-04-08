@@ -7,8 +7,6 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
     <meta name="author" content="Frederico Dulio">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -47,25 +45,6 @@
         </div>
     </section>
 
-    {{-- <div
-        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-        @if (Route::has('login'))
-            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                @auth
-                    <a href="{{ url('/dashboard') }}"
-                        class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}"
-                            class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                    @endif
-                @endauth
-            </div>
-        @endif
-    </div> --}}
-
     <!-- MENU -->
     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
         <div class="container">
@@ -77,7 +56,7 @@
                     <span class="icon icon-bar"></span>
                 </button>
 
-                <!-- lOGO TEXT HERE -->
+                <!-- lOGO -->
                 <a href="#" class="navbar-brand">VamBoraa<span> Food </span></a>
             </div>
 
@@ -196,8 +175,7 @@
 
                 <div class="col-md-4 col-sm-4">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="{{ asset('Welcome/images/team-image1.jpg') }}" class="img-responsive"
-                            alt="">
+                        <img src="{{ asset('Welcome/images/chef.jpg') }}" class="img-responsive" alt="">
                         <div class="team-hover">
                             <div class="team-item">
                                 <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
@@ -216,8 +194,7 @@
 
                 <div class="col-md-4 col-sm-4">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="{{ asset('Welcome/images/team-image2.jpg') }}" class="img-responsive"
-                            alt="">
+                        <img src="{{ asset('Welcome/images/chef3.jpg') }}" class="img-responsive" alt="">
                         <div class="team-hover">
                             <div class="team-item">
                                 <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
@@ -236,8 +213,7 @@
 
                 <div class="col-md-4 col-sm-4">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="{{ asset('Welcome/images/team-image3.jpg') }}" class="img-responsive"
-                            alt="">
+                        <img src="{{ asset('Welcome/images/chef2.jpg') }}" class="img-responsive" alt="">
                         <div class="team-hover">
                             <div class="team-item">
                                 <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
@@ -269,13 +245,12 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/menu-image1.jpg') }}" class="image-popup"
+                        <a href="{{ asset('Welcome/images/1.jpg') }}" class="image-popup"
                             title="American Breakfast">
-                            <img src="{{ asset('Welcome/images/menu-image1.jpg') }}" class="img-responsive"
-                                alt="">
+                            <img src="{{ asset('Welcome/images/1.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
@@ -290,13 +265,11 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/menu-image2.jpg') }}" class="image-popup"
-                            title="Self-made Salad">
-                            <img src="{{ asset('Welcome/images/menu-image2.jpg') }}" class="img-responsive"
-                                alt="">
+                        <a href="{{ asset('Welcome/images/10.jpg') }}" class="image-popup" title="Self-made Salad">
+                            <img src="{{ asset('Welcome/images/10.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
@@ -311,13 +284,11 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/menu-image3.jpg') }}" class="image-popup"
-                            title="Chinese Noodle">
-                            <img src="{{ asset('Welcome/images/menu-image3.jpg') }}" class="img-responsive"
-                                alt="">
+                        <a href="{{ asset('Welcome/images/4.jpg') }}" class="image-popup" title="Chinese Noodle">
+                            <img src="{{ asset('Welcome/images/4.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
@@ -332,13 +303,11 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/menu-image4.jpg') }}" class="image-popup"
-                            title="Rice Soup">
-                            <img src="{{ asset('Welcome/images/menu-image4.jpg') }}" class="img-responsive"
-                                alt="">
+                        <a href="{{ asset('Welcome/images/q.jpg') }}" class="image-popup" title="Rice Soup">
+                            <img src="{{ asset('Welcome/images/q.jpg') }}" class="img-responsive" alt="imagem">
 
                             <div class="menu-info">
                                 <div class="menu-item">
@@ -351,15 +320,14 @@
                             </div>
                         </a>
                     </div>
+
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/menu-image5.jpg') }}" class="image-popup"
-                            title="Project title">
-                            <img src="{{ asset('Welcome/images/menu-image5.jpg') }}" class="img-responsive"
-                                alt="">
+                        <a href="{{ asset('Welcome/images/11.jpg') }}" class="image-popup" title="Project title">
+                            <img src="{{ asset('Welcome/images/11.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
@@ -377,9 +345,9 @@
                 <div class="col-md-4 col-sm-6">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/menu-image6.jpg') }}" class="image-popup"
+                        <a href="{{ asset('Welcome/images/Da banda.jpg') }}" class="image-popup"
                             title="Project title">
-                            <img src="{{ asset('Welcome/images/menu-image6.jpg') }}" class="img-responsive"
+                            <img src="{{ asset('Welcome/images/Da banda.jpg') }}" class="img-responsive"
                                 alt="">
 
                             <div class="menu-info">
@@ -500,74 +468,11 @@
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <div class="home">
-        <div class="form_container">
-            <i class="uil uil-times form_close"></i>
-            <!-- Login From -->
-            <div class="form login_form">
-                <form action="{{ route('userlogin') }}" method="POST">
-                    @csrf
-                    <h2>Login</h2>
-
-                    <div class="input_box">
-                        <input type="email" placeholder="exemplo@gmail.com" name="email" required />
-                        <i class="uil uil-envelope-alt email"></i>
-                    </div>
-                    <div class="input_box">
-                        <input type="password" placeholder="Inserir a password" name="password" required />
-                        <i class="uil uil-lock password"></i>
-                        <i class="uil uil-eye-slash pw_hide"></i>
-                    </div>
-
-                    <div class="option_field">
-                        <a href="#" class="forgot_pw">Esqueceu a password?</a>
-                    </div>
-
-                    <button class="button">Login</button>
-
-                    <div class="login_signup">Não tem uma conta? <a href="#" id="signup">Cadastar</a></div>
-                </form>
-            </div>
-
-            <!-- Signup From -->
-            <div class="form signup_form">
-                <form action="{{ route('admin_register') }}" method="POST">
-                    <h2>Cadastrar</h2>
-                    @csrf
-
-                    <div class="input_box">
-                        <input type="text" placeholder="Inserir o teu nome completo" name="name" required />
-                        <i class="uil uil-envelope-alt email"></i>
-                    </div>
-
-                    <div class="input_box">
-                        <input type="email" placeholder="Inserir o email" name="email" required />
-                        <i class="uil uil-envelope-alt email"></i>
-                    </div>
-
-                    <div class="input_box">
-                        <input type="password" placeholder="Criar password" name="password" required />
-                        <i class="uil uil-lock password"></i>
-                        <i class="uil uil-eye-slash pw_hide"></i>
-                    </div>
-                    <div class="input_box">
-                        <input type="password" placeholder="Confirmar password" name="cpassword" required />
-                        <i class="uil uil-lock password"></i>
-                        <i class="uil uil-eye-slash pw_hide"></i>
-                    </div>
-
-                    <button type="submit" class="button">Cadastar</button>
-
-                    <div class="login_signup">Já tem uma conta? <a href="#" id="login">Login</a></div>
-                </form>
-            </div>
-        </div>
-    </div>
+    @include('login')
 
     <!-- FOOTER -->
     <footer id="footer" data-stellar-background-ratio="0.5">

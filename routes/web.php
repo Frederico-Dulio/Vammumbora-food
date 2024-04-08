@@ -27,16 +27,17 @@ Route::prefix('admin')->group(function () {
 });
 
 
-//Rotas para o cliente
-// Route::prefix('client')->group(function () {
-//     Route::post('/login/owner', [ClienteController::class, 'login_client'])->name('userlientlogin');
-//     Route::get('/index', [ClienteController::class, 'index'])->name('clientdashboard')->middleware('cliente');
-//     Route::get('/logout', [ClienteController::class, 'client_logout'])->name('client.logout')->middleware('cliente');
-//     Route::post('/registrar', [ClienteController::class, 'store'])->name('client_register');
-// });
+// Rotas para o cliente
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::prefix('client')->group(function () {
+    Route::post('/login/owner', [ClienteController::class, 'login_client'])->name('userlientlogin');
+    Route::get('/index', [ClienteController::class, 'index'])->name('clientdashboard')->middleware('cliente');
+    Route::get('/logout', [ClienteController::class, 'client_logout'])->name('client.logout')->middleware('cliente');
+    Route::post('/registrar', [ClienteController::class, 'store'])->name('client_register');
+});
 
-require __DIR__.'/auth.php';
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
+
+// require __DIR__.'/auth.php';
