@@ -1,31 +1,7 @@
 /* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 
-/* Home */
-.home {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: url("bg.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.home::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.5s ease-out;
-}
-.home.show::before {
-  opacity: 1;
-  pointer-events: auto;
-}
 /* From */
 .form_container {
   position: fixed;
@@ -38,7 +14,6 @@
   background: #fff;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-out;
@@ -59,8 +34,8 @@
 }
 .form_close {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 4px;
+  right: 4px;
   color: #0b0217;
   font-size: 22px;
   opacity: 0.7;
@@ -113,8 +88,7 @@
 .option_field {
   margin-top: 14px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .form_container a {
   color: #7d2ae8;
@@ -144,6 +118,7 @@
   width: 100%;
   padding: 10px 0;
   border-radius: 10px;
+  border: transparent;
 }
 .login_signup {
   font-size: 12px;
