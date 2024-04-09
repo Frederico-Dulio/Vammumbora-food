@@ -249,16 +249,16 @@
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="{{ asset('Welcome/images/1.jpg') }}" class="image-popup"
-                            title="American Breakfast">
+                            title="Quicuanga">
                             <img src="{{ asset('Welcome/images/1.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
-                                    <h3>American Breakfast</h3>
-                                    <p>Tomato / Eggs / Sausage</p>
+                                    <h3>Quicuanga</h3>
+                                    <p>Molho / Macaiabo / Moamba</p>
                                 </div>
                                 <div class="menu-price">
-                                    <span>$25</span>
+                                    <span>2.500Kz</span>
                                 </div>
                             </div>
                         </a>
@@ -268,16 +268,16 @@
                 <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/10.jpg') }}" class="image-popup" title="Self-made Salad">
-                            <img src="{{ asset('Welcome/images/10.jpg') }}" class="img-responsive" alt="">
+                        <a href="{{ asset('Welcome/images/3.jpg') }}" class="image-popup" title="Funge e Feijão">
+                            <img src="{{ asset('Welcome/images/3.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
-                                    <h3>Self-made Salad</h3>
-                                    <p>Green / Fruits / Healthy</p>
+                                    <h3>Funge</h3>
+                                    <p>Funge / Feijão / Carne / Lossua</p>
                                 </div>
                                 <div class="menu-price">
-                                    <span>$18</span>
+                                    <span>3.000Kz</span>
                                 </div>
                             </div>
                         </a>
@@ -287,16 +287,16 @@
                 <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/4.jpg') }}" class="image-popup" title="Chinese Noodle">
+                        <a href="{{ asset('Welcome/images/4.jpg') }}" class="image-popup" title="Mufete">
                             <img src="{{ asset('Welcome/images/4.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
-                                    <h3>Chinese Noodle</h3>
-                                    <p>Pepper / Chicken / Vegetables</p>
+                                    <h3>Mufete</h3>
+                                    <p>Peixe / Feijão / Banana</p>
                                 </div>
                                 <div class="menu-price">
-                                    <span>$34</span>
+                                    <span>$2.750Kz</span>
                                 </div>
                             </div>
                         </a>
@@ -306,16 +306,16 @@
                 <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/q.jpg') }}" class="image-popup" title="Rice Soup">
+                        <a href="{{ asset('Welcome/images/q.jpg') }}" class="image-popup" title="espaguete almondegas">
                             <img src="{{ asset('Welcome/images/q.jpg') }}" class="img-responsive" alt="imagem">
 
                             <div class="menu-info">
                                 <div class="menu-item">
-                                    <h3>Rice Soup</h3>
-                                    <p>Green / Chicken</p>
+                                    <h3>espaguete almondegas</h3>
+                                    <p>espaguete / almondegas</p>
                                 </div>
                                 <div class="menu-price">
-                                    <span>$28</span>
+                                    <span>4.800Kz</span>
                                 </div>
                             </div>
                         </a>
@@ -326,16 +326,16 @@
                 <div class="col-md-4 col-sm-4">
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
-                        <a href="{{ asset('Welcome/images/11.jpg') }}" class="image-popup" title="Project title">
+                        <a href="{{ asset('Welcome/images/11.jpg') }}" class="image-popup" title="Cabrito Assado no Forno">
                             <img src="{{ asset('Welcome/images/11.jpg') }}" class="img-responsive" alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
-                                    <h3>Deli Burger</h3>
-                                    <p>Beef / Fried Potatoes</p>
+                                    <h3>Cabrito Assado no Forno</h3>
+                                    <p>Carne de Cabrito / Batatas</p>
                                 </div>
                                 <div class="menu-price">
-                                    <span>$46</span>
+                                    <span>5.700Kz</span>
                                 </div>
                             </div>
                         </a>
@@ -346,17 +346,17 @@
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="{{ asset('Welcome/images/Da banda.jpg') }}" class="image-popup"
-                            title="Project title">
+                            title="Filé de Peixe">
                             <img src="{{ asset('Welcome/images/Da banda.jpg') }}" class="img-responsive"
                                 alt="">
 
                             <div class="menu-info">
                                 <div class="menu-item">
-                                    <h3>Big Flat Fried</h3>
-                                    <p>Pepper / Crispy</p>
+                                    <h3>Filé de Peixe</h3>
+                                    <p>Peixe / Açafrão</p>
                                 </div>
                                 <div class="menu-price">
-                                    <span>$30</span>
+                                    <span>6.750Kz</span>
                                 </div>
                             </div>
                         </a>
