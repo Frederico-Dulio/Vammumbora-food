@@ -3,7 +3,7 @@
         <i class="uil uil-times form_close"></i>
         <!-- Login From -->
         <div class="form login_form">
-            <form action="{{ route('userlogin') }}" method="POST">
+            <form action="{{ route('admin.userlogin') }}" method="POST">
                 @csrf
                 <h2>Login</h2>
 
@@ -29,7 +29,7 @@
 
         <!-- Signup From -->
         <div class="form signup_form">
-            <form action="{{ route('admin_register') }}" method="POST">
+            <form action="{{ route('admin.register') }}" method="POST">
                 <h2>Cadastrar</h2>
                 @csrf
 

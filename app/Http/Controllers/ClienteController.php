@@ -26,7 +26,7 @@ class ClienteController extends Controller
 
         if (Auth::guard('cliente')->attempt(['email' => $check['email'], 'password' => $check['password']])) {
             # code...
-            return redirect()->route('clientdashboard')->with('success', "Logado com sucesso!");
+            return redirect()->route('client.dashboard')->with('success', "Logado com sucesso!");
         } else {
             return back()->with('error', 'email ou senha incorreta!');
         }
