@@ -296,7 +296,7 @@
                                     <p>Peixe / Feijão / Banana</p>
                                 </div>
                                 <div class="menu-price">
-                                    <span>$2.750Kz</span>
+                                    <span>2.750Kz</span>
                                 </div>
                             </div>
                         </a>
