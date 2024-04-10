@@ -16,13 +16,12 @@ class ClienteController extends Controller
      */
     public function index()
     {
-       dd('Bem Vindo!');
         return view('client.client-master');
     }
 
     public function login_client(Request $request)
     {
-        
+
         $check = $request->all();
 
         if (Auth::guard('cliente')->attempt(['email' => $check['email'], 'password' => $check['password']])) {

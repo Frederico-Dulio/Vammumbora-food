@@ -571,6 +571,7 @@
                     closeButton: !0,
                     tapToDismiss: !0,
                     progressBar: !0,
+                    positionClass: "toast-top-left",
                     rtl: o
                 }
             );
@@ -608,6 +609,22 @@
             );
         @endif
     </script>
+
+<script>
+    "use strict";
+    var o = "rtl" === $("html").attr("data-textdirection");
+    @if (session('errorclient'))
+        toastr.warning("{{ session('errorclient') }}",
+            "", {
+                closeButton: !0,
+                tapToDismiss: !0,
+                progressBar: !0,
+                positionClass: "toast-top-left",
+                rtl: o
+            }
+        );
+    @endif
+</script>
 
 </body>
 
