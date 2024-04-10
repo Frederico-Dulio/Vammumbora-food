@@ -16,18 +16,17 @@ class ClienteController extends Controller
      */
     public function index()
     {
-       dd('Bem Vindo!');
         return view('client.client-master');
     }
 
     public function login_client(Request $request)
     {
-        
+
         $check = $request->all();
 
         if (Auth::guard('cliente')->attempt(['email' => $check['email'], 'password' => $check['password']])) {
             # code...
-            return redirect()->route('clientdashboard')->with('success', "Logado com sucesso!");
+            return redirect()->route('client.dashboard')->with('success', "Logado com sucesso!");
         } else {
             return back()->with('error', 'email ou senha incorreta!');
         }

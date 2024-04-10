@@ -19,7 +19,7 @@ class Cliente
     public function handle(Request $request, Closure $next)
     {
         if (!Auth::guard('cliente')->check()) {
-            return redirect()->route('login')->with('error', 'Por favor faça primeiro o login');
+            return redirect()->route('login')->with('errorclient', 'Por favor faça primeiro o login');
         }
 
         return $next($request);

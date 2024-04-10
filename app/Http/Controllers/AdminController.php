@@ -26,7 +26,7 @@ class AdminController extends Controller
 
         if (Auth::guard('admin')->attempt(['email' => $check['email'], 'password' => $check['password']])) {
             # code...
-            return redirect()->route('Dashboard')->with('success', "Logado com sucesso!");
+            return redirect()->route('admin.Dashboard')->with('success', "Logado com sucesso!");
         } else {
             return back()->with('error', 'email ou senha incorreta!');
         }
