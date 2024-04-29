@@ -386,7 +386,7 @@
                                 perferendis.</p>
                             <div class="tst-author">
                                 <h4>Isabel Bongo</h4>
-                                <span>Pharetra quam sit amet</span>
+                                <span>Lorem ipsum dolor sit amet.</span>
                             </div>
                         </div>
 
@@ -395,7 +395,7 @@
                                 distinctio earum id! Fugit doloribus qui laborum soluta explicabo.</p>
                             <div class="tst-author">
                                 <h4>Felicia Elimila</h4>
-                                <span>Magna nisi porta ligula</span>
+                                <span>Lorem ipsum dolor sit amet.</span>
                             </div>
                         </div>
 
@@ -404,7 +404,7 @@
                                 possimus, officiis cumque dolorum? Soluta nulla quas eaque nam!</p>
                             <div class="tst-author">
                                 <h4>Nvita Zankulo</h4>
-                                <span>Vitae lacinia augue urna quis</span>
+                                <span>Lorem ipsum dolor sit amet.</span>
                             </div>
                         </div>
 
