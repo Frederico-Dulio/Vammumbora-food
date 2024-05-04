@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>VamBora Food</title>
+    <title>KamuSumbe</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -27,8 +27,6 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="{{ asset('Admin/img/logo.png') }}" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{ asset('Welcome/css/templatemo-style.css') }}">
@@ -65,7 +63,7 @@
                 </button>
 
                 <!-- lOGO -->
-                <a href="#" class="navbar-brand">VamBoraa<span> Food </span></a>
+                <a href="#" class="navbar-brand"><span><i class="fa fa-utensils me-3"></i> Kamu</span>Sumbe</a>
             </div>
 
             <!-- MENU LINKS -->
@@ -95,7 +93,7 @@
                     <div class="caption">
                         <div class="container">
                             <div class="col-md-8 col-sm-12">
-                                <h3>FAD Coffee &amp; Restaurant</h3>
+                                <h3><i class="fa fa-utensils me-3"></i> KamuSumbe</h3>
                                 <h1>A nossa missão é lhe oferecer uma experiência inesquecível</h1>
                                 <a href="#team" class="section-btn btn btn-default smoothScroll">Conversar com
                                     um dos nossos chefes</a>
