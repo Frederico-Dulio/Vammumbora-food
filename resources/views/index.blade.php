@@ -193,8 +193,8 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>New Catherine</h3>
-                        <p>Kitchen Officer</p>
+                        <h3>Ana Fernandes</h3>
+                        <p>Comidas Áfricana</p>
                     </div>
                 </div>
 
@@ -212,8 +212,8 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Lindsay Perlen</h3>
-                        <p>Owner &amp; Manager</p>
+                        <h3>José Armando</h3>
+                        <p>Carnes e Grelhados</p>
                     </div>
                 </div>
 
@@ -231,8 +231,8 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Isabella Grace</h3>
-                        <p>Pizza Specialist</p>
+                        <h3>Isabela Graça</h3>
+                        <p>Pizza</p>
                     </div>
                 </div>
 

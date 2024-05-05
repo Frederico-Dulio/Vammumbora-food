@@ -14,7 +14,7 @@ var options = {
 				},
 				total: {
 					show: true,
-					label: 'Sales',
+					label: 'Vendas',
 					formatter: function (w) {
 						// By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
 						return '2500'
@@ -24,7 +24,7 @@ var options = {
 		}
 	},
 	series: [90, 80, 70, 60, 50],
-	labels: ['iMac', 'Macbook', 'iPad', 'iPhone', 'Others'],
+	labels: ['Hamburguer', 'Funge', 'Mufete', 'Quicuanga', 'Outros'],
 	colors: ['#1a8e5f', '#262b31', '#434950', '#63686f', '#868a90'],
 }
 

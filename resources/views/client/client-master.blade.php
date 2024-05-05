@@ -32,6 +32,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ asset('toatr.css') }}" rel="stylesheet" />
 </head>
 
 <body>
@@ -60,13 +63,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0 pe-4">
                     <a href="#" class="nav-item nav-link active smoothScroll">Home</a>
-                    <a href="#" class="nav-item nav-link smoothScroll">Sobre</a>
-                    <a href="#" class="nav-item nav-link smoothScroll">Serviços</a>
-                    <a href=#menu" class="nav-item nav-link smoothScroll">Menu</a>
+                    <a href="#servico" class="nav-item nav-link smoothScroll">Serviços</a>
+                    <a href="#sobre" class="nav-item nav-link smoothScroll">Sobre</a>
+                    <a href="#menu" class="nav-item nav-link smoothScroll">Menu</a>
 
-                    <a href="#" class="nav-item nav-link">Sair</a>
+                    <a href="{{ route('client.logout') }}" class="nav-item nav-link">Sair</a>
                 </div>
-                <a href="#menu" class="btn btn-primary py-2 px-4 smoothScroll">Reservar</a>
+                <a href="#reservar" class="btn btn-primary py-2 px-4 smoothScroll">Reservar</a>
             </div>
         </nav>
 
@@ -93,7 +96,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="servico">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -139,7 +142,7 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="sobre">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
@@ -203,7 +206,7 @@
 
     <!-- Menu Start -->
     <div class="container-xxl py-5" id="menu">
-        <div class="container">
+        <div class="container" >
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h5 class="section-title ff-secondary text-center text-primary fw-normal">Menu</h5>
                 <h1 class="mb-5">Pratos Mais Requeridos</h1>
@@ -216,7 +219,7 @@
                             <i class="fa fa-coffee fa-2x text-primary"></i>
                             <div class="ps-3">
                                 <small class="text-body">Popular</small>
-                                <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                <h6 class="mt-n1 mb-0">Café da Manhã</h6>
                             </div>
                         </a>
                     </li>
@@ -225,8 +228,8 @@
                            href="#tab-2">
                             <i class="fa fa-hamburger fa-2x text-primary"></i>
                             <div class="ps-3">
-                                <small class="text-body">Special</small>
-                                <h6 class="mt-n1 mb-0">Launch</h6>
+                                <small class="text-body">Especial</small>
+                                <h6 class="mt-n1 mb-0">Abertura</h6>
                             </div>
                         </a>
                     </li>
@@ -235,8 +238,8 @@
                            href="#tab-3">
                             <i class="fa fa-utensils fa-2x text-primary"></i>
                             <div class="ps-3">
-                                <small class="text-body">Lovely</small>
-                                <h6 class="mt-n1 mb-0">Dinner</h6>
+                                <small class="text-body">Amável</small>
+                                <h6 class="mt-n1 mb-0">Jantar</h6>
                             </div>
                         </a>
                     </li>
@@ -597,13 +600,13 @@
     <!-- Menu End -->
 
 
-    <!-- Reservation Start -->
-    <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Reserva Start -->
+    <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s" id="reservar">
         <div class="row g-0">
             <div class="col-md-6">
                 <div class="video">
                     <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/o_5PdMt1GMM" data-bs-target="#videoModal">
+                            data-src="img/cooking.mp4" data-bs-target="#videoModal">
                         <span></span>
                     </button>
                 </div>
@@ -617,14 +620,14 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Nome Completo">
+                                    <input type="text" class="form-control" id="name" placeholder="Nome Completo" required>
                                     <label for="oame">Nome</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email"
-                                           placeholder="exemplo@gmail.com">
+                                           placeholder="exemplo@gmail.com" required>
                                     <label for="email">Email</label>
                                 </div>
                             </div>
@@ -632,29 +635,26 @@
                                 <div class="form-floating date" id="date3" data-target-input="nearest">
                                     <input type="text" class="form-control datetimepicker-input" id="datetime"
                                            placeholder="Date & Time" data-target="#date3"
-                                           data-toggle="datetimepicker" />
+                                           data-toggle="datetimepicker" required/>
                                     <label for="datetime">Data & Hora</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <select class="form-select" id="select1">
-                                        <option value="1">pessoa 1</option>
-                                        <option value="2">pessoa 2</option>
-                                        <option value="3">pessoa 3</option>
-                                    </select>
-                                    <label for="select1">Pessoas</label>
+                                    <input type="number" class="form-control"
+                                           placeholder="Date & Time" min="1" max="20" id="pessoa" required/>
+                                    <label for="pessoa">Pessoas</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                         <textarea class="form-control" placeholder="Special Request" id="message"
-                                                  style="height: 100px"></textarea>
+                                                  style="height: 100px" required></textarea>
                                     <label for="message">Pedidos Especiais</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Fazer a Reserva</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit">Confirmar a Reserva</button>
                             </div>
                         </div>
                     </form>
@@ -694,10 +694,10 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="img/team1.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('Welcome/images/chef.jpg') }}" alt="">
                         </div>
-                        <h5 class="mb-0">Nome Completo</h5>
-                        <small>Especialidade</small>
+                        <h5 class="mb-0">Ana Fernandes</h5>
+                        <small>Comidas Áfricana</small>
                         <div class="d-flex justify-content-center mt-3">
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -708,10 +708,10 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="img/team2.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('Welcome/images/chef3.jpg') }}" alt="">
                         </div>
-                        <h5 class="mb-0">Nome Completo</h5>
-                        <small>Especialidade</small>
+                        <h5 class="mb-0">José Armando</h5>
+                        <small>Carnes e Grelhados</small>
                         <div class="d-flex justify-content-center mt-3">
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -722,10 +722,10 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="img/team3.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('Welcome/images/chef2.jpg') }}" alt="">
                         </div>
-                        <h5 class="mb-0">Nome Completo</h5>
-                        <small>Especialidade</small>
+                        <h5 class="mb-0">Isabela Graça</h5>
+                        <small>Pizza</small>
                         <div class="d-flex justify-content-center mt-3">
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -736,10 +736,10 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="img/team4.jpg" alt="">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
                         </div>
-                        <h5 class="mb-0">Nome Completo</h5>
-                        <small>Especialidade</small>
+                        <h5 class="mb-0">Carlos Dos Reis</h5>
+                        <small>Chefe de Cosinha</small>
                         <div class="d-flex justify-content-center mt-3">
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -766,11 +766,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error atque dolorem, voluptatum
                         pariatur quis fugit!</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial1.jpg"
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
                              style="width: 50px; height: 50px;">
                         <div class="ps-3">
-                            <h5 class="mb-1">Nome do Cliente</h5>
-                            <small>Profição</small>
+                            <h5 class="mb-1">Marisa Dias</h5>
+                            <small>Professora</small>
                         </div>
                     </div>
                 </div>
@@ -779,11 +779,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error atque dolorem, voluptatum
                         pariatur quis fugit!</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial2.jpg"
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpeg"
                              style="width: 50px; height: 50px;">
                         <div class="ps-3">
-                            <h5 class="mb-1">Nome do Cliente</h5>
-                            <small>Profição</small>
+                            <h5 class="mb-1">Frederico Dulio</h5>
+                            <small>Professor</small>
                         </div>
                     </div>
                 </div>
@@ -792,11 +792,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error atque dolorem, voluptatum
                         pariatur quis fugit!</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial3.jpg"
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpeg"
                              style="width: 50px; height: 50px;">
                         <div class="ps-3">
-                            <h5 class="mb-1">Nome do Cliente</h5>
-                            <small>Profição</small>
+                            <h5 class="mb-1">Azevaldo Caluaco</h5>
+                            <small>Desenvolvedor Web</small>
                         </div>
                     </div>
                 </div>
@@ -805,11 +805,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error atque dolorem, voluptatum
                         pariatur quis fugit!</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial4.jpg"
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg"
                              style="width: 50px; height: 50px;">
                         <div class="ps-3">
-                            <h5 class="mb-1">Nome do Cliente</h5>
-                            <small>Profição</small>
+                            <h5 class="mb-1">Ana Maria</h5>
+                            <small>Auditora</small>
                         </div>
                     </div>
                 </div>
@@ -826,11 +826,10 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">VamBora Food</a>, All Right Reserved.
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">Frederico
-                            Dulio</a><br><br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">Dulio
-                            01</a>
+                        &copy; <a class="border-bottom" href="#">KamuSumbe</a>, Todos os direitos reservados.
+                        Desenvolvido por<a class="border-bottom" href="https://htmlcodex.com"> Frederico
+                            Dulio </a><br><br>
+                        Distribuido por <a class="border-bottom" href="https://themewagon.com" target="_blank"> KamuSumbe </a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -856,16 +855,99 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="lib/wow/wow.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
+<script src="Welcome/js/smoothscroll.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/counterup/counterup.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/tempusdominus/js/moment.min.js"></script>
 <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
 <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-<script src="{{ asset('Welcome/js/smoothscroll.js') }}"></script>
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+
+<script src="{{ asset('toastr.min.js') }}"></script>
+<script src="{{ asset('toastr.js') }}"></script>
+
+<script>
+    "use strict";
+    var o = "rtl" === $("html").attr("data-textdirection");
+    @if (session('error'))
+    toastr.error("{{ session('error') }}",
+        "", {
+            closeButton: !0,
+            tapToDismiss: !0,
+            progressBar: !0,
+            rtl: o
+        }
+    );
+    @endif
+</script>
+
+<script>
+    "use strict";
+    var o = "rtl" === $("html").attr("data-textdirection");
+    @if (session('errorload'))
+    toastr.warning("{{ session('errorload') }}",
+        "", {
+            closeButton: !0,
+            tapToDismiss: !0,
+            progressBar: !0,
+            positionClass: "toast-top-left",
+            rtl: o
+        }
+    );
+    @endif
+</script>
+
+<script>
+    "use strict";
+    var o = "rtl" === $("html").attr("data-textdirection");
+    @if (session('logout'))
+    toastr.info("{{ session('logout') }}",
+        "", {
+            closeButton: !0,
+            tapToDismiss: !0,
+            progressBar: !0,
+            // positionClass: "toast-top-left",
+            rtl: o
+        }
+    );
+    @endif
+</script>
+
+<script>
+    "use strict";
+    var o = "rtl" === $("html").attr("data-textdirection");
+    @if (session('cadastrar'))
+    toastr.success("{{ session('cadastrar') }}",
+        "", {
+            closeButton: !0,
+            tapToDismiss: !0,
+            progressBar: !0,
+            positionClass: "toast-top-center",
+            rtl: o
+        }
+    );
+    @endif
+</script>
+
+<script>
+    "use strict";
+    var o = "rtl" === $("html").attr("data-textdirection");
+    @if (session('errorclient'))
+    toastr.warning("{{ session('errorclient') }}",
+        "", {
+            closeButton: !0,
+            tapToDismiss: !0,
+            progressBar: !0,
+            positionClass: "toast-top-left",
+            rtl: o
+        }
+    );
+    @endif
+</script>
+
 </body>
 
 </html>

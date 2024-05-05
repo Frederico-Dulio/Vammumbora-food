@@ -6,14 +6,7 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Loading ends -->
 
-
-    <!-- *************
-   ************ Header section start *************
-  ************* -->
-
-    <!-- Header start -->
     <header class="header">
         <div class="logo-wrapper">
             <a href="index.html" class="logo">
@@ -702,6 +695,3 @@
 
 
         </div>
-        <!-- *************
-    ************ Main container end *************
-   ************* -->
