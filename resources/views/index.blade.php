@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>VamBora Food</title>
+    <title>KamuSumbe</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -19,8 +19,14 @@
 
     <!-- Unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="{{ asset('Admin/img/logo.png') }}" />
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{ asset('Welcome/css/templatemo-style.css') }}">
@@ -57,7 +63,7 @@
                 </button>
 
                 <!-- lOGO -->
-                <a href="#" class="navbar-brand">VamBoraa<span> Food </span></a>
+                <a href="#" class="navbar-brand"><span><i class="fa fa-utensils me-3"></i> Kamu</span>Sumbe</a>
             </div>
 
             <!-- MENU LINKS -->
@@ -87,7 +93,7 @@
                     <div class="caption">
                         <div class="container">
                             <div class="col-md-8 col-sm-12">
-                                <h3>FAD Coffee &amp; Restaurant</h3>
+                                <h3><i class="fa fa-utensils me-3"></i> KamuSumbe</h3>
                                 <h1>A nossa missão é lhe oferecer uma experiência inesquecível</h1>
                                 <a href="#team" class="section-btn btn btn-default smoothScroll">Conversar com
                                     um dos nossos chefes</a>
@@ -134,7 +140,7 @@
                     <div class="about-info">
                         <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
                             <h4>Nossa História</h4>
-                            <h2>Fazendo comidas deliciosas desde 2017</h2>
+                            <h2 class="text-primary-h1">Fazendo comidas deliciosas desde 2017</h2>
                         </div>
 
                         <div class="wow fadeInUp" data-wow-delay="0.4s">
@@ -168,7 +174,7 @@
 
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h2>Conversar com os nossos chefes</h2>
+                        <h2 class="text-primary-h1">Conversar com os nossos chefes</h2>
                         <h4>Será sempre um pazer servir você Amigo!</h4>
                     </div>
                 </div>
@@ -241,7 +247,7 @@
 
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h2>Menu do Dia</h2>
+                        <h2 class="text-primary-h1">Menu do Dia</h2>
                     </div>
                 </div>
 
@@ -374,7 +380,7 @@
 
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h2>Testeunhas</h2>
+                        <h2>Testemunhas</h2>
                     </div>
                 </div>
 
@@ -386,7 +392,7 @@
                                 perferendis.</p>
                             <div class="tst-author">
                                 <h4>Isabel Bongo</h4>
-                                <span>Pharetra quam sit amet</span>
+                                <span>Lorem ipsum dolor sit amet.</span>
                             </div>
                         </div>
 
@@ -395,7 +401,7 @@
                                 distinctio earum id! Fugit doloribus qui laborum soluta explicabo.</p>
                             <div class="tst-author">
                                 <h4>Felicia Elimila</h4>
-                                <span>Magna nisi porta ligula</span>
+                                <span>Lorem ipsum dolor sit amet.</span>
                             </div>
                         </div>
 
@@ -404,7 +410,7 @@
                                 possimus, officiis cumque dolorum? Soluta nulla quas eaque nam!</p>
                             <div class="tst-author">
                                 <h4>Nvita Zankulo</h4>
-                                <span>Vitae lacinia augue urna quis</span>
+                                <span>Lorem ipsum dolor sit amet.</span>
                             </div>
                         </div>
 
@@ -420,53 +426,13 @@
         <div class="container">
             <div class="row">
 
-                <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.4s">
                     <div id="google-map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5259.392398892639!2d13.40914459203177!3d-12.585485001818466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sao!4v1707667249674!5m2!1spt-PT!2sao"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-sm-12">
-
-                    <div class="col-md-12 col-sm-12">
-                        <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                            <h2>Contactar</h2>
-                        </div>
-                    </div>
-
-                    <!-- CONTACT FORM -->
-                    <form action="" method="POST" class="wow fadeInUp" id="contact-form" role="form"
-                        data-wow-delay="0.8s">
-                        @csrf
-                        <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
-                        <h6 class="text-success">Menssagem enviada com sucesso.</h6>
-
-                        <!-- IF MAIL NOT SENT -->
-                        <h6 class="text-danger">E-mail deve ser válido e a Menssagem com mais de 1 caracter.</h6>
-
-                        <div class="col-md-6 col-sm-6">
-                            <input type="text" class="form-control" id="cf-name" name="name"
-                                placeholder="Nome Completo">
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <input type="email" class="form-control" id="cf-email" name="email"
-                                placeholder="Email: exemplo@gmail.com">
-                        </div>
-
-                        <div class="col-md-12 col-sm-12">
-                            <input type="text" class="form-control" id="cf-subject" name="subject"
-                                placeholder="Assunto">
-
-                            <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Menssagem"></textarea>
-
-                            <button type="submit" class="form-control" id="cf-submit" name="submit">Enviar
-                                Menssagem</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>

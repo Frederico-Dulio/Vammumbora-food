@@ -1,6 +1,4 @@
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
-  body {
+body {
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -12,10 +10,15 @@
      TIPOGRAFIA
   -----------------------------------------*/
 
-  h1,h2,h3,h4,h5,h6 {
+  h1,h2,h3 {
     font-weight: bold;
+      font-family: 'Pacifico';
     line-height: inherit;
   }
+
+.text-primary-h1{
+    color: #FEA116;
+}
 
   h1 {
     color: #252525;
@@ -64,7 +67,7 @@
   }
 
   a:hover, a:active, a:focus {
-    color: #ce3232;
+    color: #FEA116;
     outline: none;
   }
 
@@ -134,7 +137,7 @@
   -----------------------------------------*/
 
   .section-btn {
-    background: #ce3232;
+    background: #FEA116;
     border-radius: 0;
     border: 0;
     color: #f9f9f9;
@@ -208,12 +211,12 @@
 
   .custom-navbar .navbar-brand {
     color: #ffffff;
-    font-size: 18px;
+    font-size: calc(1.375rem + 1.5vw);
     font-weight: bold;
   }
 
   .custom-navbar .navbar-brand span {
-    color: #ce3232;
+    color: #FEA116;
   }
 
   .top-nav-collapse {
@@ -221,12 +224,7 @@
   }
 
   .custom-navbar .navbar-nav.navbar-nav-first {
-    margin-left: 8em;
-  }
-
-  .custom-navbar .navbar-nav.navbar-right li a {
-    padding-right: 12px;
-    padding-left: 12px;
+    margin-left: 10em;
   }
 
   .custom-navbar .navbar-nav.navbar-right .section-btn {
@@ -239,30 +237,19 @@
     color: #ffffff;
   }
 
-  .custom-navbar .navbar-nav.navbar-right .section-btn:focus {
-    color: #ffffff;
-  }
-
-  .custom-navbar .navbar-nav.navbar-right .section-btn a {
-    padding: 10px 25px;
-  }
-
-  .custom-navbar .nav .section-btn a:hover {
-    color: #ffffff;
-  }
-
   .custom-navbar .nav li a {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
-    color: #ffffff;
-    padding-right: 22px;
-    padding-left: 22px;
+    color: snow;
+    padding-right: 18px;
+    padding-left: 18px;
+      margin-left: -12px;
     text-transform: uppercase;
   }
 
   .custom-navbar .nav li a:hover {
-    background: transparent;
-    color: #ce3232;
+    background: #0F172B;
+    color: #FEA116;
   }
 
   .custom-navbar .navbar-nav > li > a:hover,
@@ -271,8 +258,8 @@
   }
 
   .custom-navbar .nav li.active > a {
-    background-color: transparent;
-    color: #ce3232;
+    background-color: #0F172B;
+    color: #FEA116;
   }
 
   .custom-navbar .navbar-toggle {
@@ -296,7 +283,7 @@
     }
 
     .custom-navbar.top-nav-collapse {
-      background: #ffffff;
+      background: #0F172B;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -304,15 +291,15 @@
     }
 
     .top-nav-collapse .navbar-brand {
-      color: #454545;
+      color: snow;
     }
 
     .top-nav-collapse .nav li a {
-      color: #575757;
+      color: snow;
     }
 
     .top-nav-collapse .nav .section-btn a {
-      color: #ffffff;
+      color: snow;
     }
   }
 
@@ -328,6 +315,7 @@
 
   #home h1 {
     color: #ffffff;
+      font-family: "Nunito", sans-serif;
     padding-bottom: 30px;
   }
 
@@ -335,6 +323,7 @@
     color: #f9f9f9;
     font-size: 14px;
     line-height: inherit;
+      font-family: "Nunito", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
@@ -345,6 +334,11 @@
       padding-left: 0;
     }
   }
+@media (min-width: 768px) {
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-top: -11px;
+    }
+}
 
   .slider .owl-dots {
     position: absolute;
@@ -421,7 +415,7 @@
 
   .slider .item-third .section-btn:hover,
   .slider .item-third .section-btn:focus {
-    background: #ce3232;
+    background: #FEA116;
     border-color: transparent;
     color: #ffffff;
   }
@@ -436,11 +430,11 @@
     padding-bottom: 0;
   }
 
-  .about-info {
+  .about-info h1{
     padding: 0 6em 5em 0;
   }
 
-  .about-info .section-title {
+  .about-info .section-title h1 {
     padding-bottom: 20px;
   }
 
@@ -721,7 +715,7 @@
   }
 
   #contact button#cf-submit {
-    background: #ce3232;
+    background: #FEA116;
     border-radius: 0;
     border: 0;
     color: #ffffff;
@@ -773,7 +767,7 @@
   }
 
   .footer-open-hour {
-    background: #ce3232;
+    background: #FEA116;
     background: url('../images/footer-open-hour-bg.jpg') center center no-repeat;
     background-size: cover;
     border-radius: 20px;
@@ -831,7 +825,7 @@
 
   .social-icon li a {
     border-radius: 100px;
-    color: #ce3232;
+    color: #FEA116;
     font-size: 15px;
     width: 35px;
     height: 35px;
@@ -843,7 +837,7 @@
   }
 
   .social-icon li a:hover {
-    background: #ce3232;
+    background: #FEA116;
     color: #ffffff;
   }
 
