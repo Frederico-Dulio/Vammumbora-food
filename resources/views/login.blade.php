@@ -3,7 +3,7 @@
         <i class="uil uil-times form_close"></i>
         <!-- Login From -->
         <div class="form login_form">
-            <form action="{{ route('admin.userlogin') }}" method="POST">
+            <form action="{{ route('client.login') }}" method="POST">
                 @csrf
                 <h2>Login</h2>
 
